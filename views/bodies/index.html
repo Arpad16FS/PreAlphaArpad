@@ -1,0 +1,40 @@
+<body>
+    <h1>Botones de colores</h1>
+    <button id="blueBtn" disabled>Botón azul</button>
+    <button id="btnEnabler">Habilitar botón azul</button>
+    <button id="greenBtn">Botón verde</button>
+
+    <div id="animalList"></div>
+
+    <hr>
+    <h2>GET form</h2>
+    <form method="GET" action="scripts/process.php">
+        <input type="text" name="yourName"></input>
+        <input type="submit" value="Enviar"></input>
+    </form>
+
+    <h2>AJAX GET form</h2>
+    <form id="getForm">
+        <input type="text" name="yourName" id="yourName1"></input>
+        <input type="submit" value="Enviar"></input>
+    </form>
+
+    <h2>POST form</h2>
+    <form method="POST" action="scripts/process.php">
+        <input type="text" name="yourName"></input>
+        <input type="submit" value="Enviar"></input>
+    </form>
+
+    <h2>AJAX POST form</h2>
+    <form id="postForm" accept-charset="utf-8">
+        <input type="text" name="yourName" id="yourName2"></input>
+        <input type="submit" value="Enviar"></input>
+    </form>
+
+    <button id="redBtn">Botón rojo</button>
+
+    <div id="usersList">RewriteRule ^([^/]+)/? index.php?url=$1 [L,QSA]</div>
+
+    <script src="scripts/colorBtnData.js"></script>
+</body>
+</html>

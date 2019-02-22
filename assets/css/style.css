@@ -1,0 +1,78 @@
+button {
+    border-radius: 20%;
+    font-size: 16px;
+    padding: 16px;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    border-width: 6px;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,60,0,0.24), 0 17px 50px 0 rgba(0,0,120,0.519);
+}
+
+button:disabled {
+    cursor: default;
+    box-shadow: none;
+}
+
+#blueBtn {
+    background-color: blue;
+    color: white;
+    border-color: blue;
+}
+
+#blueBtn:disabled {
+    background-color: #33f;
+    color: gray;
+    border-color: #33f;
+}
+
+#greenBtn {
+    background-color: #0f0;
+    color: white;
+    border-color: #0f0;
+}
+
+#greenBtn:disabled {
+    background-color: #3d3;
+    color: gray;
+    border-color: #3d3;
+}
+
+/*#blueBtn {
+    --color: 240;
+    background-color: hsl(var(--color), 100%, 50%);
+    border-color: hsl(var(--color), 100%, 50%);
+    color: white;
+}
+
+#greenBtn {
+    --color: 0, 255, 0;
+    background-color: rgba(var(--color), 1);
+    border-color: rgba(var(--color), 1);
+    color: white;
+}
+
+#greenBtn:disabled {
+    cursor: default;
+    box-shadow: none !important;
+    background-color: hsl(var(--color), 100%, 30%) !important;
+    border-color: hsl(var(--color), 100%, 30%) !important;
+    color: #aaa !important;
+}
+
+#blueBtn {
+    --color: 0, 0, 255;
+    background-color: rgba(var(--color), 1);
+    border-color: rgba(var(--color), 1);
+    color: white;
+}
+
+[disabled] {
+    cursor: default;
+    box-shadow: none !important;
+    background-color: rgba(var(--color), 0.7) !important;
+    border-color: rgba(var(--color), 0.17) !important;
+    color: #aaa !important;
+}*/
