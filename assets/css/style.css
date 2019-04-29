@@ -1,3 +1,14 @@
+/**{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}*/
+
 button {
     border-radius: 20%;
     font-size: 16px;
@@ -14,30 +25,26 @@ button:hover {
 button:disabled {
     cursor: default;
     box-shadow: none;
+    opacity: 0.7;
+    color: grey !important;
 }
 
-#blueBtn {
+.button-blue {
     background-color: blue;
     color: white;
     border-color: blue;
 }
 
-#blueBtn:disabled {
-    background-color: #33f;
-    color: gray;
-    border-color: #33f;
-}
-
-#greenBtn {
+.button-green {
     background-color: #0f0;
     color: white;
     border-color: #0f0;
 }
 
-#greenBtn:disabled {
-    background-color: #3d3;
-    color: gray;
-    border-color: #3d3;
+.button-red {
+    background-color: #f00;
+    color: white;
+    border-color: #f00;
 }
 
 /*#blueBtn {
