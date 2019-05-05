@@ -1,6 +1,8 @@
 <body>
     <h1>Página para crear nuevos usuarios</h1>
 
+    <div><?php echo $this->mensaje; ?></div>
+
     <form action="<?php echo constant('URL'); ?>nuevoUsuario/registrarEmpleado" method="POST">
         <p>
             <label for="costo_hora">Costo por hora</label>

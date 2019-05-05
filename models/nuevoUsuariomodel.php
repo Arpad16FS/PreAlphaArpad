@@ -13,8 +13,8 @@ class NuevoUsuarioModel extends Model{
             $query->execute(['costo_hora' => $datos['costo_hora'], 'nombre_empleado' => $datos['nombre_empleado'], 'cargo' => $datos['cargo']]);
             return true;
         } catch(PDOException $e){
-            echo $e->getMessage();
-            echo "Empleado duplicado";
+            //echo $e->getMessage();
+            //echo "Empleado duplicado";
             return false;
         }
     }

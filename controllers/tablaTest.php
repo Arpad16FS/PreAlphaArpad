@@ -1,34 +1,33 @@
 <?php
-class NuevoUsuario extends Controller{
+class tablaTest extends Controller{
     function __construct(){
         parent::__construct();
         $this->view->mensaje = "";
     }
 
     function render(){
-        $this->view->render('nuevoUsuario/index');
+        $this->view->render('tablaTest/index');
     }
 
     public function saludo(){
         echo "<p>Ejecutaste el método saludo</p>";
+        $this->render();
     }
 
     function registrarEmpleado(){
         //Se obtienen los datos desde el controlador con el fin de poder hacer validación
-        $costoHora = $_POST['costo_hora'];
-        $nombreEmpleado = $_POST['nombre_empleado'];
-        $cargo = $_POST['cargo'];
+        $matricula = $_POST['matricula'];
+        $test = $_POST['test'];
 
         $mensaje = "";
 
         if($this->model->insertDB([
-            'costo_hora' => $costoHora,
-            'nombre_empleado' => $nombreEmpleado,
-            'cargo' => $cargo,
+            'matricula' => $matricula,
+            'test' => $test,
         ])){
             $mensaje = "Empleado creado";
         } else {
-            $mensaje = "Empleado duplicado";
+            $mensaje .= "Empleado duplicado";
         }
         //$this->model->insertDB();
 

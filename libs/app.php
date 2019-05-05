@@ -24,6 +24,7 @@ class App{
             require_once $archivoController;
             $controller = new MasterPage();
             $controller->loadModel('masterPage');
+            $controller->render();
             return false;
         }
 
@@ -37,10 +38,25 @@ class App{
             $controller = new $url[0];
             $controller->loadModel($url[0]);
 
-            // Validar si existe el mètodo
-            if(isset($url[1])){
-                $controller->{$url[1]}();
+            // # de elementos del arreglo
+            $nparam = sizeof($url);
+
+            if ($nparam > 1){
+                // Verificar si hay "metodos despues de la vista" (parametros)
+                if ($nparam > 2){
+                    $param = [];
+                    for($i = 2; $i < $nparam; $i++){
+                        array_push($param, $url[$i]);
+                    }
+                    // Envía el/los parametros posteriores al método
+                    $controller->{$url[1]}($param);
+                }else {
+                    $controller->{$url[1]}();
+                }
+            } else {
+                $controller->render();
             }
+
         } else {
             require_once 'controllers/loadError.php';
             $controller = new LoadError();
