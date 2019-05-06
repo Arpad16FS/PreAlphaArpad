@@ -1,9 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="<?php echo constant('URL'); ?>assets/css/style.css"> <!-- Se solicita que la url regrese a la consante especìficada (con el fin de recibir siempre de la misma raíz el CSS) -->
+    <title>pre Alpha Árpád</title>
+</head>
+<body>
+
     <?php
-    require 'views/layouts/header.php';
     require 'views/layouts/navigation.php';
     ?>
 
-<body>
     <h1>Modificar al empleado <?php /*$porEspacio = explode(" ", $this->empleado->nombre_empleado);*/ echo $this->empleado->porEspacio[1]; ?></h1>
 
     <div><?php echo $this->mensaje; ?></div>
@@ -33,8 +42,10 @@
             <input type="submit" value="Actualizar empleado">
         </p>
     </form>
-</body>
 
     <?php
     require 'views/layouts/footer.php';
     ?>
+
+</body>
+</html>

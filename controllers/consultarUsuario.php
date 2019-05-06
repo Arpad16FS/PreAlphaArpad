@@ -59,12 +59,17 @@ class ConsultarUsuario extends Controller{
 
         if ($this->model->deleteUser($idEmpleado)){
             // Actualizar Exito
-            $this->view->mensaje = "Se eliminó el empleado exitosamente";
+            //$this->view->mensaje = "Se eliminó el empleado exitosamente";
+            $mensaje = "Se eliminó el empleado(id) " . $idEmpleado . " exitosamente";
         } else {
             // Actualizar Error
-            $this->view->mensaje = "Error al intentar eliminar empleado";
+            //$this->view->mensaje = "Error al intentar eliminar empleado";
+            $mensaje = "Error al intentar eliminar empleado";
         }
-        $this->render();
+        //$this->render();
+
+        //echo 'Se eliminó a empleado(id) = ' $idEmpleado;
+        echo $mensaje;
     }
 
 
