@@ -3,4 +3,5 @@
     <li><a href="<?php echo constant('URL'); ?>nuevoUsuario">Nuevo</a></li>
     <li><a href="<?php echo constant('URL'); ?>tablaTest">Tabla Test</a></li>
     <li><a href="<?php echo constant('URL'); ?>consultarUsuario">Consultar usuarios</a></li>
+    <li><a href="<?php echo constant('URL'); ?>basico">Tutorial básico</a></li>
 </ul>

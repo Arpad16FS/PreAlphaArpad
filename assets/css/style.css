@@ -47,39 +47,22 @@ button:disabled {
     border-color: #f00;
 }
 
-/*#blueBtn {
-    --color: 240;
-    background-color: hsl(var(--color), 100%, 50%);
-    border-color: hsl(var(--color), 100%, 50%);
-    color: white;
+.basico .error {
+    padding: 15px;
+    background-color: #f45;
 }
 
-#greenBtn {
-    --color: 0, 255, 0;
-    background-color: rgba(var(--color), 1);
-    border-color: rgba(var(--color), 1);
-    color: white;
+.basico .correcto {
+    padding: 15px;
+    background-color: #4f5;
 }
 
-#greenBtn:disabled {
-    cursor: default;
-    box-shadow: none !important;
-    background-color: hsl(var(--color), 100%, 30%) !important;
-    border-color: hsl(var(--color), 100%, 30%) !important;
-    color: #aaa !important;
+.basico .barra {
+    background-color: aqua;
+    border-radius: 5px;
 }
 
-#blueBtn {
-    --color: 0, 0, 255;
-    background-color: rgba(var(--color), 1);
-    border-color: rgba(var(--color), 1);
-    color: white;
+.basico .seleccionado {
+    background-color: darkcyan;
+    border-radius: 5px;
 }
-
-[disabled] {
-    cursor: default;
-    box-shadow: none !important;
-    background-color: rgba(var(--color), 0.7) !important;
-    border-color: rgba(var(--color), 0.17) !important;
-    color: #aaa !important;
-}*/
